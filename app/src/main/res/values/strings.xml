@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Gift Cards</string>
+
+    <!-- Gift Cards List -->
+    <string name="gift_cards_title">Gift Cards</string>
+    <string name="gift_cards_list_loading_error_title">There was a problem getting gift cards</string>
+    <string name="gift_cards_list_loading_error_button">Try again</string>
+
+    <!-- Gift Card Details -->
+    <string name="add_to_cart_button">Add to cart</string>
+    <string name="discount_concat">Pay&#160;</string>
+    <string name="buy_now_concat">Buy now -&#160;</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="gift_card_amount_label">Amount</string>
+
+    <!-- Shopping Cart -->
+    <string name="shopping_cart_title">Shopping Cart</string>
+    <string name="checkout_concat">Checkout -&#160;</string>
+    <string name="empty_cart">Cart is empty</string>
+
+    <!-- Receipt -->
+    <string name="receipt_title">Receipt</string>
+    <string name="purchase_complete">Purchase Complete</string>
+    <string name="total">Total:&#160;</string>
+
+    <!-- Accessibility -->
+    <string name="badged_icon">badged icon</string>
+    <string name="arrow_up">arrow up</string>
+    <string name="arrow_down">arrow down</string>
+    <string name="loading_icon">loading icon</string>
+    <string name="back_button">back button</string>
+    <string name="card_image">card image</string>
+    <string name="receipt_image">receipt image</string>
+    <string name="delete_icon">delete item</string>
+    <string name="error_icon">error icon</string>
+
+</resources>
