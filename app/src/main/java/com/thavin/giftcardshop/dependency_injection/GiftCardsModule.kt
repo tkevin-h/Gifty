@@ -32,8 +32,8 @@ object GiftCardsModule {
 
     @Provides
     @Singleton
-    fun providesGiftCardsRepository(retrofit: Retrofit): GiftCardsRepository =
-        GiftCardsRepositoryImplementation(retrofit)
+    fun providesGiftCardsRepository(giftCardsApi: GiftCardsApi): GiftCardsRepository =
+        GiftCardsRepositoryImplementation(giftCardsApi)
 
     @Provides
     @Singleton
@@ -48,12 +48,13 @@ object GiftCardsModule {
     @OptIn(ExperimentalSerializationApi::class)
     @Provides
     @Singleton
-    fun providesGiftCardsApi(json: Json, client: OkHttpClient): Retrofit =
+    fun providesGiftCardsApi(json: Json, client: OkHttpClient): GiftCardsApi =
         Retrofit.Builder()
             .baseUrl(GiftCardsApi.BASE_URL)
             .addConverterFactory(json.asConverterFactory(APPLICATION_JSON.toMediaType()))
             .client(client)
             .build()
+            .create(GiftCardsApi::class.java)
 
     @OptIn(ExperimentalSerializationApi::class)
     @Provides
